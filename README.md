@@ -1,2 +1,2 @@
-# prettyalert
+# Prettyalert
 A pretty modal window.
