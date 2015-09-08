@@ -36,6 +36,11 @@ var fragment = create(cssStr);
 document.body.insertBefore(fragment, document.body.childNodes[0]);
 }
 
+document.getElementById('closeModal').onclick = function () {
+   closeModal();
+
+};
+
 function animateSvg(elem ,dir) {
     var path = document.getElementById(elem);
     var length = path.getTotalLength();
