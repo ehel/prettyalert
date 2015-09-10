@@ -35,15 +35,7 @@ var fragment = create(cssStr);
 // You can use native DOM methods to insert the fragment:
 document.body.insertBefore(fragment, document.body.childNodes[0]);
 }
-	window.onload = function()
-{
-document.getElementById('closeModal').onclick = function () {
-   closeModal();
-}
 
-
-
-};
 
 function animateSvg(elem ,dir) {
     var path = document.getElementById(elem);
@@ -75,10 +67,15 @@ function closeModal(){
      animateSvg('svgico' , false);
 }
 
-function prettytalert(){
+function prettytalert(title, content, type){
 
-insertHtml('Hello', 'Succes','succes');
+insertHtml(title, content, type);
 	insertCss();
 	openModal();
-
+ 	window.onload = function()
+{
+document.getElementById('closeModal').onclick = function () {
+   closeModal();
+}
+};
 }
