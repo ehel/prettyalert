@@ -76,6 +76,5 @@ insertHtml(title, content, type);
 {
 document.getElementById('closeModal').onclick = function () {
    closeModal();
-}
-};
+}};
 }
