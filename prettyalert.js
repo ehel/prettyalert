@@ -26,8 +26,6 @@ function insertHtml(title, content, type) {
     document.body.insertBefore(fragment, document.body.childNodes[0]);
 }
 
-//insertHtml('Standart' , 'Content');
-
 function insertCss(){
     
 var cssStr="<style>#overlay{visibility:hidden;opacity:0;position:absolute;left:0;top:0;width:100%;height:100%;text-align:center;z-index:1000;transition:opacity 500ms;-webkit-transition:opacity 500ms;-moz-transition:opacity 500ms;-o-transition:opacity 500ms;background-color:rgba(192,192,192,.7);font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif}#overlay div{width:400px;height:250px;margin:100px auto;background-color:#fff;border-radius:3%;padding:15px;text-align:center;transition:height 400ms cubic-bezier(.1,-1.5,.1,2.5),width 400ms cubic-bezier(.1,-1.5,.1,2.5);-webkit-transition:height 400ms cubic-bezier(.1,-1.5,.1,2.5),width 400ms cubic-bezier(.1,-1.5,.1,2.5);-moz-transition:height 400ms cubic-bezier(.1,-1.5,.1,2.5),width 400ms cubic-bezier(.1,-1.5,.1,2.5);-o-transition:height 400ms cubic-bezier(.1,-1.5,.1,2.5),width 400ms cubic-bezier(.1,-1.5,.1,2.5)}#closeModal{max-width:70px;opacity:0;color:#fff;background-color:#0080FF;text-decoration:none;width:60px;padding:10px 0;margin:0 auto;display:block;border-radius:10%;-webkit-transition:opacity 400ms;-moz-transition:opacity 400ms;-ms-transition:opacity 400ms;-o-transition:opacity 400ms;transition:opacity 400ms}#modalcontainer h2{font-size:30px;font-weight:600;color:#575757;margin:0}#modalcontainer p{color:#797979;font-size:16px;font-weight:300}svg{height:150px;margin:0}svg path{stroke-dashoffset:170;stroke-dasharray:170;transition:stroke-dashoffset 600ms linear;-webkit-transition:stroke-dashoffset 600ms linear;-moz-transition:stroke-dashoffset 600ms linear;-o-transition:stroke-dashoffset 600ms linear}</style>";
@@ -35,12 +33,9 @@ var fragment = create(cssStr);
 // You can use native DOM methods to insert the fragment:
 document.body.insertBefore(fragment, document.body.childNodes[0]);
 }
-
-
 function animateSvg(elem ,dir) {
     var path = document.getElementById(elem);
     var length = path.getTotalLength();
-     
     path.style.strokeDashoffset = (dir)?0:170;
 }
 
