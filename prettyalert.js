@@ -33,13 +33,13 @@ var fragment = create(cssStr);
 // You can use native DOM methods to insert the fragment:
 document.body.insertBefore(fragment, document.body.childNodes[0]);
 }
-function animateSvg(elem ,dir) {
+function animateSvg(elem ,dir , type) {
     var path = document.getElementById(elem);
     var length = path.getTotalLength();
     path.style.strokeDashoffset = (dir)?0:170;
 }
 
-function openModal(){
+function openModal(type){
    el = document.getElementById("overlay");
      mod = document.getElementById("modalcontainer");
     el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
@@ -51,7 +51,7 @@ function openModal(){
    // animateSvg('svgico' , true);
 }
 
-function closeModal(){
+function closeModal(type){
   var el = document.getElementById("overlay");
     var  mod = document.getElementById("modalcontainer");
     mod.style.width = '400px';
