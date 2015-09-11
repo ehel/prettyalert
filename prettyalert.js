@@ -38,9 +38,10 @@ document.body.insertBefore(fragment, document.body.childNodes[0]);
 function animateSvg(elem ,dir , type) {
     var path = document.getElementById(elem);
     var length = path.getTotalLength();
-   if (type=='succes') { path.style.strokeDashoffset = (dir)?0:170;};
-   if (type=='error') { path.style.transform='rotate(720deg)';};
-   if (type=='attention') {};
+   if (type=='succes') { path.style.strokeDashoffset = (dir)?0:170;}
+   else if (type=='error') { path.style.transform='rotate(720deg)';}
+   else if (type=='attention') {}
+   	else{};
 }
 
 function openModal(type){
