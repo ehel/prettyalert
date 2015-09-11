@@ -71,10 +71,12 @@ function prettytalert(title, content, type){
 
 insertHtml(title, content, type);
 	insertCss();
-	openModal(type);
+	setTimeout(function(){	openModal(type);
+ 	},400);
  	window.onload = function()
 {
 document.getElementById('closeModal').onclick = function () {
    closeModal(type);
 }};
+
 }
