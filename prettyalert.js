@@ -59,7 +59,7 @@ function closeModal(type){
     el.style.opacity = 0;
     document.getElementById("closeModal").style.opacity = 0;
     setTimeout('el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";', 500);
-     animateSvg('svgico' , false);
+     animateSvg('svgico' , false , type);
 }
 
 function prettytalert(title, content, type){
@@ -70,6 +70,6 @@ insertHtml(title, content, type);
  	window.onload = function()
 {
 document.getElementById('closeModal').onclick = function () {
-   closeModal();
+   closeModal(type);
 }};
 }
