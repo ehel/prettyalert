@@ -37,6 +37,7 @@ function animateSvg(elem ,dir , type) {
     var path = document.getElementById(elem);
     var length = path.getTotalLength();
    if (type=='succes') { path.style.strokeDashoffset = (dir)?0:170; };
+   if (type=='error') { path.style.transform='rotate(720deg)';};
 }
 
 function openModal(type){
