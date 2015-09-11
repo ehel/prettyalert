@@ -36,7 +36,7 @@ document.body.insertBefore(fragment, document.body.childNodes[0]);
 function animateSvg(elem ,dir , type) {
     var path = document.getElementById(elem);
     var length = path.getTotalLength();
-    path.style.strokeDashoffset = (dir)?0:170;
+   if (type=='succes') { path.style.strokeDashoffset = (dir)?0:170; };
 }
 
 function openModal(type){
@@ -47,7 +47,7 @@ function openModal(type){
     mod.style.width = '450px';
     mod.style.height = '300px';
     setTimeout('document.getElementById("closeModal").style.opacity = 1; ', 500);
-    setTimeout(function() {animateSvg('svgico', true) ;} , 400);
+    setTimeout(function() {animateSvg('svgico', true,type) ;} , 400);
    // animateSvg('svgico' , true);
 }
 
@@ -66,7 +66,7 @@ function prettytalert(title, content, type){
 
 insertHtml(title, content, type);
 	insertCss();
-	openModal();
+	openModal(type);
  	window.onload = function()
 {
 document.getElementById('closeModal').onclick = function () {
