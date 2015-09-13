@@ -80,3 +80,12 @@ document.getElementById('closeModal').onclick = function () {
 }};
 
 }
+
+function praltimer(title, content, type, time){
+insertHtml(title, content, type);
+	insertCss();
+	setTimeout(function(){	openModal(type);
+ 	},400);
+	setTimeout(function(){	closeModal(type);
+ 	},time);
+}
