@@ -20,7 +20,7 @@ function insertHtml(title, content, type) {
         svg = attention;
     }
 
-    var htmlStr = '<div id="overlay"><div id="modalcontainer">' + svg + '<h2>' + title + '</h2><p>' + content + '</p><a id="closeModal" href="#">OK</a></div></div>';
+    var htmlStr = '<div id="overlay"><div id="modalcontainer">' + svg + '<h2>' + title + '</h2><p>' + content + '</p><a id="closeModal" href="#" >OK</a></div></div>';
     var fragment = createfg(htmlStr);
     
     document.body.insertBefore(fragment, document.body.childNodes[0]);
@@ -75,7 +75,8 @@ insertHtml(title, content, type);
  	},400);
  	window.onload = function()
 {
-document.getElementById('closeModal').onclick = function () {
+document.getElementById('closeModal').onclick = function (event) {
+	event.preventDefault();
    closeModal(type);
 }};
 
