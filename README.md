@@ -12,5 +12,5 @@ prettytalert('Hi there', 'And this is the message','error');
 ```
 Warning message :
 ```javascript
-prettytalert('Hi there', 'And this is the message','attention');
+prettytalert('Hi there', 'And this is the message','warning');
 ```
