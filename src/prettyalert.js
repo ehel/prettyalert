@@ -63,7 +63,6 @@ function openModal(type){
 	mod.style.height = '300px';
 	setTimeout('document.getElementById("closeModal").style.opacity = 1; ', 500);
 	setTimeout(function() {animateSvg('svgico', true,type) ;} , 400);
-   // animateSvg('svgico' , true);
 }
 
 function closeModal(type){
@@ -93,7 +92,7 @@ function prettytalert(title, content, type, btn){
 	}
 
 	function praltimer(title, content, type, time){
-		insertHtml(title, content, type ,btn);
+		insertHtml(title, content, type ,'none');
 		insertCss();
 		setTimeout(function(){	openModal(type);
 		},400);
