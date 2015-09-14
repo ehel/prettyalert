@@ -91,7 +91,7 @@ function prettytalert(title, content, type, btn){
 	}
 
 	function praltimer(title, content, type, time){
-		insertHtml(title, content, type);
+		insertHtml(title, content, type ,btn);
 		insertCss();
 		setTimeout(function(){	openModal(type);
 		},400);
