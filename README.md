@@ -2,7 +2,10 @@
 A pretty modal window.
 
 ## Install
-
+Download the package and reference the JavaScript:
+```html
+<script src="src/prettyalert.js"></script>
+```
 ## Usage
 Succes message :
 ```javascript
@@ -20,5 +23,5 @@ A message with auto close timer (will close in 4 seconds):
 ```javascript
 praltimer('Hello', 'This is the message', 'succes', 4000);
 ```
-
+![Pretty Alert](https://raw.githubusercontent.com/ehel/prettyalert/master/image.gif)
 ## Browser compatibility
