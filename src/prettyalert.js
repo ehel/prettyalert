@@ -50,8 +50,8 @@ function animateSvg(elem ,dir , type) {
 	var length = path.getTotalLength();
 	if (type=='succes') { path.style.strokeDashoffset = (dir)?0:170;}
 	else if (type=='error') { path.style.transform='rotate(720deg)';}
-	else if (type=='warning') {}
-		else{};
+	else if (type=='warning') {path.style.opacity=1;}
+		else{path.style.opacity=1;};
 }
 
 function openModal(type){
