@@ -43,8 +43,6 @@ function insertCss(){
 
 	document.body.insertBefore(fragment, document.body.childNodes[0]);
 }
-
-
 function animateSvg(elem ,dir , type) {
 	var path = document.getElementById(elem);
 	var length = path.getTotalLength();
@@ -59,7 +57,6 @@ function animateSvg(elem ,dir , type) {
 			path.style.opacity=1;
 		};
 }
-
 function openModal(type){
 	el = document.getElementById("overlay");
 	mod = document.getElementById("modalcontainer");
@@ -96,7 +93,6 @@ function prettytalert(title, content, type, btn){
 		}};
 
 	}
-
 	function praltimer(title, content, type, time){
 		insertHtml(title, content, type ,'none');
 		insertCss();
