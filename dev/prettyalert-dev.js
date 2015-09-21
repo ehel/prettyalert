@@ -82,7 +82,7 @@ function closeModal(type){
 function prettytalert(title, content, type, btn){
 
 	insertHtml(title, content, type, btn);
-	insertCss();
+	///insertCss();
 	setTimeout(function(){	openModal(type);
 	},400);
 	window.onload = function()
@@ -95,7 +95,7 @@ function prettytalert(title, content, type, btn){
 	}
 	function praltimer(title, content, type, time){
 		insertHtml(title, content, type ,'none');
-		insertCss();
+		//insertCss();
 		setTimeout(function(){	openModal(type);
 		},400);
 		setTimeout(function(){	closeModal(type);
