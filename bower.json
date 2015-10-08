@@ -1,0 +1,21 @@
+{
+  "name": "PrettyAlert",
+  "version": "0.5.2",
+  "homepage": "https://github.com/ehel/prettyalert",
+  "authors": [
+    "ValentinSirbu <valentinsirbu@yandex.com>"
+  ],
+  "description": "A pretty modal window.",
+  "main": "src/prettyalert.js",
+  "keywords": [
+    "modal"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
