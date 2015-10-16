@@ -25,7 +25,7 @@ praltimer('Hello', 'This is the message', 'succes', 4000);
 ```
 ![Pretty Alert](https://raw.githubusercontent.com/ehel/prettyalert/master/image.gif)
 ## Browser compatibility
-Opera 32+ - Works.
-Firefox 41+  - Works.
-Chrome 46+  - Works.
-IE 11+  - Works. (without animation)
+*Opera 32+ - Works.
+*Firefox 41+  - Works.
+*Chrome 46+  - Works.
+*IE 11+  - Works. (without animation)
