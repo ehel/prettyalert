@@ -9,15 +9,15 @@ Download the package and reference the JavaScript:
 ## Usage
 Succes message :
 ```javascript
-prettytalert('Hi there', 'And this is the message','succes');
+prettytalert('Hi there', 'And this is the message', 'succes');
 ```
 Error message :
 ```javascript
-prettytalert('Hi there', 'And this is the message','error');
+prettytalert('Hi there', 'And this is the message', 'error');
 ```
 Warning message :
 ```javascript
-prettytalert('Hi there', 'And this is the message','warning');
+prettytalert('Hi there', 'And this is the message', 'warning');
 ```
 A message with auto close timer (will close in 4 seconds):
 ```javascript
