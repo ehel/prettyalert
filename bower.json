@@ -10,6 +10,9 @@
   "keywords": [
     "modal"
   ],
+   "moduleType": [
+    "globals",
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",

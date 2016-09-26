@@ -1,0 +1,23 @@
+{
+  "name": "pretty-alert",
+  "version": "0.6.1",
+  "description": "A pretty modal window.",
+  "main": "src/prettyalert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehel/prettyalert.git"
+  },
+  "keywords": [
+    "modal",
+    "js"
+  ],
+  "author": "Valentin Sirbu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ehel/prettyalert/issues"
+  },
+  "homepage": "https://github.com/ehel/prettyalert#readme"
+}
