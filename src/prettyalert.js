@@ -10,10 +10,10 @@ function createfg(htmlStr) {
 function insertHtml(title, content, type, btn) {
 	var warning = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path id="warning" fill="none" stroke="#FBB03B" stroke-width="8" stroke-linecap="round" stroke-miterlimit="10" d="M50,83v2 M50,14v54"/></svg>';
 	var error = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path id="error" fill="#FFFFFF" stroke="#C1272D" stroke-width="8" stroke-linecap="round" stroke-miterlimit="10" d="M8.8,90.7L90,9 M90,90.7 L8.8,9"/></svg>';
-	var succes = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path id="succes" fill="#FFFFFF" stroke="#8CC63F" stroke-miterlimit="10" d="M46.6,64.3l33.7-40L47.4,75.4L24.7,56L46.6,64.3z" /></svg>';
+	var success = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path id="succes" fill="#FFFFFF" stroke="#8CC63F" stroke-miterlimit="10" d="M46.6,64.3l33.7-40L47.4,75.4L24.7,56L46.6,64.3z" /></svg>';
 	var svg = '';
-	if (type == 'succes') {
-		svg = succes;
+	if (type == 'success') {
+		svg = success;
 	} else if (type == 'error') {
 		svg = error;
 	} else if (type=='warning'){
